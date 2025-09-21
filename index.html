@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgłaszanie tytułów piosenek do głosowania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zgłoszenie tytułów piosenek do głosowania</h1>
+        </header>
+
+        <section id="songForm">
+            <h2>Zgłoś tytuł piosenki</h2>
+            <form id="submitSongForm">
+                <input type="text" id="songTitle" placeholder="Wpisz tytuł piosenki" required>
+                <button type="submit">Zgłoś tytuł</button>
+            </form>
+        </section>
+
+        <section id="songList">
+            <h2>Zgłoszone piosenki</h2>
+            <ul id="songs">
+                <!-- Lista zgłoszonych tytułów -->
+            </ul>
+        </section>
+
+        <section id="voteSection">
+            <h2>Głosowanie</h2>
+            <ul id="voteList">
+                <!-- Lista piosenek do głosowania -->
+            </ul>
+            <div id="errorMessage" class="error-message"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
